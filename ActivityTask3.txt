@@ -1,0 +1,62 @@
+
+2. Create your own resume data in JSON format
+{
+    "BasicDetails" :{
+        "name":"Mohan Rao S",
+        "email":"mohaneduplatform@gmail.com",
+        "phoneNumber" : "9925555555",
+        "city" :"hosur",
+        "state":"Tamilnadu",
+        "pincode":"635110"
+    },
+    "Objective" :{
+        "content" :"To upskill the knowledge"
+    },
+    "Education" :{
+         "school" :{
+             "secondary" :{
+                 "schoolName" : "SDA School",
+                 "percentage" : "87",
+                 "YOP" : "2014"
+             },
+             "higherSecondary" :{
+                "schoolName" : "SDA School",
+                "percentage" : "79",
+                "YOP" : "2016"
+            }
+         },
+         "college" :{
+             "collegeName" : "Excel Group of Institution",
+             "percentage" : "67",
+             "YOP" : "2020"
+         }
+    },
+    "Experience":{
+        "company1":{
+            "name":"Agnitio Solution",
+            "position":"Software Developer Trainee",
+            "period":"3 months",
+            "place" : "coimbatore"
+        },
+        "company2":{
+            "name":"Wondersmind Infotech Solution",
+            "position":"Front End Developer",
+            "period":"11 months",
+            "place" : "Bangalore"
+        }
+    },
+    "technicalBackground" :{
+        "languageKnown" : "C Java",
+        "workedInRealProjects" : true
+    },
+    "Passionate" :{
+        "interesedIn" : "web development"
+    },
+    "greetings" :{
+        "content" : "your truly",
+        "name" : "Mohan Rao S",
+        "palce" :"Hosur"
+    }
+
+}
+

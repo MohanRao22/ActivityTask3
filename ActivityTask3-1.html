@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON RESUME</title>
+</head>
+<body>
+    <script>
+        
+        var request = new XMLHttpRequest();
+        // json file created by me and uploaded to jsonbin
+        request.open('GET','https://api.jsonbin.io/b/61be2546b8fdb92a527b4982');
+        request.setRequestHeader("secret-key", "$2b$10$rXJgb5IiS60Jt7b7ZT889uxdkW01WIInNbMc4EgmdXmSTbH.8sBDC");
+        request.send();
+        request.onload = function(){
+            var data = JSON.parse(this.response);
+           
+         //   console.log(data);  
+
+         // for in
+             for(let res in data){
+                
+                 console.log(res);
+                 console.log(data[res]);
+           console.log("=================")
+            }
+
+            // for loop
+            
+            for(let i=0;i<1;i++){
+                console.log(data);
+            }
+
+            // for of:
+            for(let ress in data){
+                
+                         console.log(ress);
+                         console.log(data[ress]);
+                   console.log("$$$$$");
+                    }
+
+    //forEach()   -> it is an array method
+var da="";
+var dat="";
+
+var dsa = data.forEach(ele => {
+    console.log(data);
+});
+
+// data.forEach(obj => {
+//         Object.entries(obj).forEach(([key, value]) => {
+//             console.log(`${key} ${value}`);
+//         });
+
+    
+        }
+         
+    </script>
+</body>
+</html>
+
+<!-- https://jsonbin.io/61be2546b8fdb92a527b4982/2 -->

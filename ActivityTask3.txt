@@ -4,10 +4,10 @@
     "BasicDetails" :{
         "name":"Mohan Rao S",
         "email":"mohaneduplatform@gmail.com",
-        "phoneNumber" : "9925555555",
+        "phoneNumber" : 9925555555,
         "city" :"hosur",
         "state":"Tamilnadu",
-        "pincode":"635110"
+        "pincode":635110
     },
     "Objective" :{
         "content" :"To upskill the knowledge"
@@ -16,19 +16,19 @@
          "school" :{
              "secondary" :{
                  "schoolName" : "SDA School",
-                 "percentage" : "87",
-                 "YOP" : "2014"
+                 "percentage" : 87,
+                 "YOP" : 2014
              },
              "higherSecondary" :{
                 "schoolName" : "SDA School",
-                "percentage" : "79",
-                "YOP" : "2016"
+                "percentage" : 79,
+                "YOP" : 2016
             }
          },
          "college" :{
              "collegeName" : "Excel Group of Institution",
-             "percentage" : "67",
-             "YOP" : "2020"
+             "percentage" : 67,
+             "YOP" : 2020
          }
     },
     "Experience":{

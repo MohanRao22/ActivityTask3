@@ -54,45 +54,41 @@ all key and values will be printed
 
 
             /**
-              for of:  (Still pending i need to clarify doubt on this)
+              for of: 
               **/
-              console.log("=========for of loop starts=======");
+             console.log("=========for of loop starts=======");
               
-            for(let val of data){
+        for(let val of Object.entries(data)){
                 
-                       //  console.log(val);
+                        console.log(val);
                        // console.log(data[ress]);
-                       console.log("i need to clarified regarding this loop");
+                       
                   
                     }
-                    console.log("=========for of  loop ends=======");
+                   console.log("=========for of  loop ends=======");
 
                              /***
             Output:
             ==========
-
+console window..
 **/
 
     /**
      * forEach()   -> it is an array method
      * **/
-var da="";
-var dat="";
-
-var dsa = data.forEach(ele => {
-    console.log(data);
-});
-
-
-}
-
-// data.forEach(obj => {
-//         Object.entries(obj).forEach(([key, value]) => {
-//             console.log(`${key} ${value}`);
-//         });
-
+ console.log("========== forEach() starts ===============");
+ Object.entries(data).forEach(([key,value])=> {
+    console.log(`${key}`);
+    Object.entries(value).forEach(([key, value]) => {
+            console.log(`${key} ${value}`);
+            //   Object.entries(value).forEach(([key,value])=>{
+            //  console.log(`${value}`);
+            //   });
+        });
+    });
+    console.log("========== forEach() ends ===============");
     
-       
+} 
 
      
 
@@ -100,4 +96,4 @@ var dsa = data.forEach(ele => {
 </body>
 </html>
 
-<!-- https://jsonbin.io/61be2546b8fdb92a527b4982/2 -->
+<!-- https://jsonbin.io/61be2546b8fdb92a527b4982/2 \

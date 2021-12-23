@@ -10,38 +10,72 @@
     <script>
         
         var request = new XMLHttpRequest();
-        // json file created by me and uploaded to jsonbin
+        /*  
+        Note: json file created by me and uploaded to jsonbin and called via xml request
+             **/
         request.open('GET','https://api.jsonbin.io/b/61be2546b8fdb92a527b4982');
         request.setRequestHeader("secret-key", "$2b$10$rXJgb5IiS60Jt7b7ZT889uxdkW01WIInNbMc4EgmdXmSTbH.8sBDC");
         request.send();
         request.onload = function(){
             var data = JSON.parse(this.response);
-           
-         //   console.log(data);  
-
-         // for in
-             for(let res in data){
-                
-                 console.log(res);
-                 console.log(data[res]);
-           console.log("=================")
-            }
-
-            // for loop
+            //   console.log(data); 
             
+            
+      /***
+        ******* 1. for in(points to index value)
+        ***/
+        console.log("=========for in loop starts=======");
+             for(let res in data){
+                 console.log(data[res]);
+            }
+            console.log("=========for in loop ends=======");
+
+            /***
+            Output:
+            ==========
+all  values will be printed
+  **  /
+
+
+            /***
+             2.for loop
+              ***/
+              console.log("=========for  loop starts=======");
             for(let i=0;i<1;i++){
                 console.log(data);
             }
+            console.log("=========for  loop ends=======");
 
-            // for of:
-            for(let ress in data){
+         /***
+            Output:
+            ==========
+all key and values will be printed 
+**/
+
+
+            /**
+              for of:  (Still pending i need to clarify doubt on this)
+              **/
+              console.log("=========for of loop starts=======");
+              
+            for(let val of data){
                 
-                         console.log(ress);
-                         console.log(data[ress]);
-                   console.log("$$$$$");
+                       //  console.log(val);
+                       // console.log(data[ress]);
+                       console.log("i need to clarified regarding this loop");
+                  
                     }
+                    console.log("=========for of  loop ends=======");
 
-    //forEach()   -> it is an array method
+                             /***
+            Output:
+            ==========
+
+**/
+
+    /**
+     * forEach()   -> it is an array method
+     * **/
 var da="";
 var dat="";
 
@@ -49,14 +83,19 @@ var dsa = data.forEach(ele => {
     console.log(data);
 });
 
+
+}
+
 // data.forEach(obj => {
 //         Object.entries(obj).forEach(([key, value]) => {
 //             console.log(`${key} ${value}`);
 //         });
 
     
-        }
-         
+       
+
+     
+
     </script>
 </body>
 </html>
